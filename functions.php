@@ -1,5 +1,6 @@
 <?php
 add_theme_support('post-thumbnails');
+add_image_size('med_thumb',300,200,true);
 
 function custom_excerpt_length( $length ) {
   return 15;
@@ -18,7 +19,7 @@ function check_email_address($email) {
 /* 
   return an integer as status result fi mail send 
   0   : Null email
-  1 : Success
+  1   : Success
   2   : Fail on send php function
   3   : invalid email
 */
@@ -116,4 +117,43 @@ function cf_search_distinct( $where ) {
     return $where;
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
+
+
+// [equipo nombre='nombre' puesto='puesto' thumb='135']Pequeña descripción[/equipo]
+function team_func( $atts , $content ) {
+    $a = shortcode_atts( array(
+        'nombre' => 'something',
+        'puesto' => 'something else',
+        'thumb' => null
+    ), $atts );
+    $img = wp_get_attachment_image($a['thumb'],'med_thumb');
+    $str =  <<<EOF
+      <div class="cont wow bounceInUp" layout="column" flex-gt-sm="30" flex="100">
+        <div class="img">{$img}</div>
+        <div class="info" layout="column">
+          <div class="abrir-info" person="person-1" layout="row" layout-align="center center">
+            <i class="icon-plus"></i>
+          </div>
+          <p class="nombre">{$a['nombre']}</p>
+          <p class="puesto">{$a['puesto']}</p>
+          <div class="line"></div>
+          <div class="triangulo-azul"></div>
+        </div>
+        <div class="more-info person-1" layout="row">
+          <div class="cont" layout="column" flex="100">
+            <p class="nombre">{$a['nombre']}</p>
+            <p><strong><i class="puesto">{$a['puesto']}</i></strong></p>
+            <p class="text">{$content}</p>
+            <div class="triangulo-verde-ab"></div>
+            <div class="cerrar-info">
+              <i class="icon-ICONO_TACHE"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+EOF;
+  return $str;
+}
+add_shortcode( 'equipo', 'team_func' );
+
 ?>
