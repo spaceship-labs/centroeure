@@ -1,0 +1,1 @@
+app.constant('MONGOLAB_CONFIG',{API_KEY:'tFAgLWJESY421k-iS5XsNuoFqAu1JfIA', DB_NAME:'centroeure'});

@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<div id="biblioteca" class="overflow" layout="row" layout-wrap flex="100">
-
+<div id="biblioteca" class="overflow" layout="row" layout-wrap flex="100" ng-controller="biblioCTL">
 	<div class="slider-home" layout="row" layout-align="center center" style="background: url(<?=get_bloginfo('template_directory')?>/img/2.3-CONTACTO.jpg);" layout="row" layout-wrap layout-align="center center" flex="100">
 		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
 		<div class="cont" layout="row" layout-align="center center" flex="100">
@@ -38,16 +37,9 @@
 			<input type="hidden" name="cat" value="libros">
         </form>
 	</div>
-	<?php if (!isset($_GET["tipo"])) { ?>
-	 	
-			<?php include('templates/tematica.php') ?>		
-	 	
-	<?php } ?>
-	<?php if (isset($_GET["tipo"])) { ?>
 		<div layout="row" layout-align="center center" flex="100">
 			<?php include('templates/listas.php') ?>
 		</div>
-	<?php } ?>
 
 	<div layout="row" flex="100">
 		<?php include('templates/redes.php') ?>

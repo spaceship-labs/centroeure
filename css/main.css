@@ -396,7 +396,7 @@ path:hover i{color: white}
 .detalles-libro .cont{margin-top: 100px}
 .detalles-libro .cont .box{padding: 20px}
 .detalles-libro .cont .box.border{border-right: 1px solid #979797}
-.detalles-libro .cont p{font-size: 20px;font-weight: 700;margin: 5px}
+.detalles-libro .cont p{font-size: 20px;font-weight: 700;margin: 5px;text-align:right;}
 .detalles-libro .cont .text1{color: #7EA61F}
 .detalles-libro .cont .text2{color: #939393}
 

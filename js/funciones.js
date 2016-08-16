@@ -109,23 +109,24 @@ wow = new WOW(
 
 function inicializar_mapa() {
 
-          var mapOptions = {
-            center: new google.maps.LatLng(37.774807, -3.795573),
-            zoom: 14,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false
-          };
-          var map = new google.maps.Map(document.getElementById("mapa_div"),
-              mapOptions);
-   
-          var pos = new google.maps.LatLng(37.774807, -3.795573);
-   
-          var marker = new google.maps.Marker({
-              position: pos,
-              map: map,
-              title:"Esto es un marcador",
-              animation: google.maps.Animation.DROP
-          }); 
+  var mapOptions = {
+      center: new google.maps.LatLng(37.774807, -3.795573),
+      zoom: 14,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel: false
+  };
+  var map = new google.maps.Map(document.getElementById("mapa_div"),
+      mapOptions);
+
+  var pos = new google.maps.LatLng(37.774807, -3.795573);
+
+  var marker = new google.maps.Marker({
+      position: pos,
+      map: map,
+      title: "Esto es un marcador",
+      animation: google.maps.Animation.DROP
+  });
+
 
    
 };
