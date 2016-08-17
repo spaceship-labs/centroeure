@@ -75,6 +75,25 @@
 			        		</a>
 		             <?php } endwhile; ?>
 					 <?php wp_reset_postdata(); ?>
+					 <div class="paginacion" layout="row" layout-align="center center" flex="90">
+                          <?php 
+                          global $wp_query;
+                          $big = 999999999;
+                          $pagination = paginate_links( array(
+                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                            'format' => '?paged=%#%',
+                            'prev_text'    => __('<span class="arrows next blog-arrows"><< Anterior <i class="icon-flecha-1"></i> </span>'),
+                            'next_text'    => __('<span class="arrows previous blog-arrows"> Siguiente >> <i class="icon-flecha2"></i> </span>'),
+                            'current' => max( 1, get_query_var('paged') ),
+                            'total' => $wp_query->max_num_pages
+                          ) );
+                          if( $pagination != '' ){
+                            echo "<div class='row-fluid row-center pages' layout='row' layout-align='center center' flex='100'>{$pagination}</div>";
+                          }else{
+                            echo "";
+                          }
+                        ?>
+                      </div>
 					 <?php else : ?>
     					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					 <?php endif; ?>
