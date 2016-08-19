@@ -22,7 +22,8 @@
     	</div>
            
     	<div class="list-results" layout="column">
-    		<a ng-href="/libro/?id={{publicacion._id['$oid']}}" layout="row" class="list" ng-repeat='publicacion in publicaciones'>
+
+    		<a dir-paginate="publicacion in publicaciones | itemsPerPage: 5"  ng-href="/libro/?id={{publicacion._id['$oid']}}" layout="row" class="list">
     			<div class="cont" layout="row" layout-align="center center" flex="20" flex-xs="33"><p>{{publicacion.Autor}}</p></div>
     			<div class="cont" layout="row" layout-align="center center" flex="20" flex-xs="33"><p>{{publicacion['Título']}}</p></div>
                 <div class="cont" layout="row" layout-align="center center" flex="20" hide-xs><p>{{publicacion.Editorial}}</p></div>
@@ -31,7 +32,8 @@
                 <div class="cont" layout="row" layout-align="center center" flex="20" hide-xs><p>{{publicacion['Fecha de publicación']}}</p></div>
     		</a>
 
-            <div class="paginacion" layout="row" layout-align="center center" flex="90">
+            <dir-pagination-controls class='paginacion' layout-align="center center" flex="90"></dir-pagination-controls>
+            <!-- <div class="paginacion" layout="row" layout-align="center center" flex="90">
                 <div class='row-fluid row-center pages' layout='row' layout-align='center center' flex='100'>                    
                     <span class="arrows next blog-arrows"> &lt;&lt; Anterior <i class="icon-flecha-1"></i> </span>
                     <a class="page-numbers" href="">1</a>
@@ -40,7 +42,7 @@
                     <a class="page-numbers" href="">4</a>
                     <span class="arrows previous blog-arrows"> Siguiente &gt;&gt; <i class="icon-flecha2"></i> </span>                
                 </div>
-            </div>
+            </div> -->
     	</div>
            
     </div>

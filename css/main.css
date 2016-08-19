@@ -140,8 +140,8 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 
 .overflow{overflow: hidden;}
 
-.paginacion .page-numbers{color: #4B5964;font-family: Raleway-b;margin: 0 2.5px}
-.paginacion .arrows{margin: 0 20px }
+.pagination{margin:0 auto;}
+.pagination li{display:block;float:left;margin: 0 2.5px}
 
 /*Globales*/
 

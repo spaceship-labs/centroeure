@@ -64,18 +64,18 @@ app.controller('MovilCtrl', function($scope, $timeout) {
 });
 
 app.controller('biblioCTL', function($scope, Publicacion) {
-  var start = 0;
-  var end = 0;  
-  var pages = 0;
-  var query = {limit:10,start:start,end:end}
+  $scope.pagination = {
+    currentPage : 1,
+    totalItems : 5917
+  };
 
-  Publicacion.all({ limit: 10 }).then(function(publicaciones) {
+  Publicacion.all().then(function(publicaciones) {
     $scope.publicaciones = publicaciones;
     return publicaciones;
   });
 
   Publicacion.count().then(function(count){
-    console.log(count);
+    $scope.pagination.totalItems = count;
   });
 })
 app.controller('libroCTL', function($scope, $location, Publicacion, $http) {

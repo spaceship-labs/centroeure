@@ -5,6 +5,7 @@
 <script src="<?=get_bloginfo('template_directory')?>/bower_components/angular-material/angular-material.min.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/bower_components/angularjs-mongolab/src/angular-mongolab.js"></script>
+<script src="<?=get_bloginfo('template_directory')?>/bower_components/angularUtils-pagination/dirPagination.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/fastclick.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/modernizr.custom.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/owl.carousel.min.js"></script>
