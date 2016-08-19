@@ -1,4 +1,4 @@
-var app = angular.module('project', ['ngMaterial', 'ngAnimate', 'mongolabResourceHttp']);
+var app = angular.module('project', ['ngMaterial', 'ngAnimate', 'mongolabResourceHttp','angularUtils.directives.dirPagination']);
 
 app.controller('equipoCTL', function($scope) {
   $(".abrir-info").click(function(e) {
@@ -64,9 +64,18 @@ app.controller('MovilCtrl', function($scope, $timeout) {
 });
 
 app.controller('biblioCTL', function($scope, Publicacion) {
-  Publicacion.all({ limit: 20 }).then(function(publicaciones) {
+  var start = 0;
+  var end = 0;  
+  var pages = 0;
+  var query = {limit:10,start:start,end:end}
+
+  Publicacion.all({ limit: 10 }).then(function(publicaciones) {
     $scope.publicaciones = publicaciones;
-    console.log($scope.publicaciones);
+    return publicaciones;
+  });
+
+  Publicacion.count().then(function(count){
+    console.log(count);
   });
 })
 app.controller('libroCTL', function($scope, $location, Publicacion, $http) {

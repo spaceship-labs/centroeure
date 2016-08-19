@@ -19,7 +19,8 @@
     "hammer.js": "~2.0.4",
     "jquery": "~2.2.0",
     "angularjs-mongolab": "^1.0.0-RC1",
-    "wow": "wow.js#^1.1.2"
+    "wow": "wow.js#^1.1.2",
+    "angularUtils-pagination": "angular-utils-pagination#^0.11.1"
   },
   "resolutions": {
     "angular": "^1.4.8"
