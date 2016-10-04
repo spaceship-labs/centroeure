@@ -1,4 +1,4 @@
-var app = angular.module('project', ['ngMaterial', 'ngAnimate', 'mongolabResourceHttp','angularUtils.directives.dirPagination']);
+var app = angular.module('project', ['ngMaterial', 'ngAnimate', 'mongolabResourceHttp', 'angularUtils.directives.dirPagination']);
 
 app.controller('equipoCTL', function($scope) {
   $(".abrir-info").click(function(e) {
@@ -63,31 +63,42 @@ app.controller('MovilCtrl', function($scope, $timeout) {
 
 });
 
-app.controller('biblioCTL', function($scope, Publicacion) {
+app.controller('biblioCTL', function($scope, Publicacion, libraryService) {
   $scope.pagination = {
-    currentPage : 1,
-    totalItems : 5917
+    currentPage: 1,
+    totalItems: 5917
   };
 
-  Publicacion.all().then(function(publicaciones) {
-    $scope.publicaciones = publicaciones;
-    return publicaciones;
-  });
 
-  Publicacion.count().then(function(count){
-    $scope.pagination.totalItems = count;
-  });
-})
+  $scope.pageChanged = function(newPage) {
+    libraryService.getPublications({ page: newPage })
+      .then(function(publicaciones) {
+        $scope.pagination.currentPage = newPage;
+        $scope.publicaciones = publicaciones;
+        return publicaciones;
+      });
+  };
+
+  $scope.pageChanged(1);
+});
+
 app.controller('libroCTL', function($scope, $location, Publicacion, $http) {
   var id = window.location.search.split('id=')[1];
   Publicacion.getById(id).then(function(libro) {
     $scope.libro = libro;
-    $scope.isbn = $scope.libro.ISBN.replace('ISBN:','').replace(' ','');
+    if (typeof($scope.libro.ISBN) === 'number') {
+      $scope.libro.ISBN = $scope.libro.ISBN.toString();
+    }
+    $scope.isbn = $scope.libro.ISBN.replace('ISBN:', '').replace(/ /g, '').replace(/-/g, '');
     console.log($scope.isbn);
 
-    $http.get('https://www.googleapis.com/books/v1/volumes?q='+$scope.isbn).then(function(book) {
-      $scope.book = book;
-      console.log($scope.book);
+    $http.get('https://www.googleapis.com/books/v1/volumes?q=isbn:' + $scope.isbn).then(function(res) {
+      $scope.book = {};
+      console.log(res.data);
+      if (res.data.items) {
+        $scope.book = res.data.items[0];
+        console.log($scope.book);
+      }
     });
   });
 

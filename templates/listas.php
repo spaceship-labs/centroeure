@@ -23,7 +23,12 @@
            
     	<div class="list-results" layout="column">
 
-    		<a dir-paginate="publicacion in publicaciones | itemsPerPage: 5"  ng-href="/libro/?id={{publicacion._id['$oid']}}" layout="row" class="list">
+    		<a dir-paginate="publicacion in publicaciones | itemsPerPage: 5" 
+            current-page="pagination.currentPage"
+            total-items="pagination.totalItems" 
+            ng-href="/libro/?id={{publicacion._id['$oid']}}" 
+            layout="row" 
+            class="list">             
     			<div class="cont" layout="row" layout-align="center center" flex="20" flex-xs="33"><p>{{publicacion.Autor}}</p></div>
     			<div class="cont" layout="row" layout-align="center center" flex="20" flex-xs="33"><p>{{publicacion['Título']}}</p></div>
                 <div class="cont" layout="row" layout-align="center center" flex="20" hide-xs><p>{{publicacion.Editorial}}</p></div>
@@ -32,7 +37,11 @@
                 <div class="cont" layout="row" layout-align="center center" flex="20" hide-xs><p>{{publicacion['Fecha de publicación']}}</p></div>
     		</a>
 
-            <dir-pagination-controls class='paginacion' layout-align="center center" flex="90"></dir-pagination-controls>
+            <dir-pagination-controls 
+                class='paginacion' 
+                layout-align="center center" 
+                flex="90" 
+                on-page-change="pageChanged(newPageNumber)"  ></dir-pagination-controls>
             <!-- <div class="paginacion" layout="row" layout-align="center center" flex="90">
                 <div class='row-fluid row-center pages' layout='row' layout-align='center center' flex='100'>                    
                     <span class="arrows next blog-arrows"> &lt;&lt; Anterior <i class="icon-flecha-1"></i> </span>

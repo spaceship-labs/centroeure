@@ -38,14 +38,16 @@
 
 	<div class="ficha" layout="row" layout-align="center center" flex="100">
 		<div class="max-widht" layout="row" layout-align="space-between start" layout-wrap>
-			<div class="imagen  wow bounceInLeft" flex-gt-xs="30" flex="100" style="background: url(<?=$url?>);"></div>
+			<div ng-if='book.volumeInfo.imageLinks.thumbnail' class="imagen  wow bounceInLeft" flex-gt-xs="30" flex="100" layout-align='center center' layout='row'>
+				<img ng-src='{{book.volumeInfo.imageLinks.thumbnail}}'/>
+			</div>
 			<div class="info wow bounceInRight" layout="column"  flex-gt-xs="65" flex="100">
 				<p class="titulo">{{libro['Título']}}</p>
 				<p class="subtitulo">{{libro['Editorial']}}</p>
 				<p class="autor">Por {{libro['Autor']}}</p>
-				<div><div class="line"></div></div>
+				<div><div class="line"></div></div><!-- 
 				<p class="text1">{{libro['Notas/Observaciones']}}</p>
-				<p class="text2">{{libro['']}}</p>
+				<p class="text2">{{libro['']}}</p> -->
 			</div>
 		</div>
 	</div>
@@ -66,7 +68,7 @@
 						<p class="text2">{{libro['Fecha de publicación']}}	</p>
 					</div>
 					<div layout="row" layout-align="space-between center" >
-						<p class="text1">Páginas</p>
+						<p class="text1">Número de páginas</p>
 						<p class="text2">{{libro['Número de páginas']}}</p>
 					</div>
 					<div layout="row" layout-align="space-between center" >
@@ -76,27 +78,31 @@
 				</div>
 				<div class="box" layout="column" flex flex-xs="100">
 					<div layout="row" layout-align="space-between center" >
-						<p class="text1">Editorial:</p>
-						<p class="text2">{{libro['Editorial']}}</p>
+						<p class="text1">Tipo de documento:</p>
+						<p class="text2">{{libro['Tipo de documento']}}</p>
 					</div>
 					<div layout="row" layout-align="space-between center" >
-						<p class="text1">Fecha de publicación:</p>
-						<p class="text2">{{libro['Fecha de publicación']}}	</p>
+						<p class="text1">Notas/Observaciones:</p>
+						<p class="text2">{{libro['Notas/Observaciones']}}	</p>
 					</div>
 					<div layout="row" layout-align="space-between center" >
-						<p class="text1">Páginas</p>
-						<p class="text2">{{libro['Número de páginas']}}</p>
+						<p class="text1">Página Web</p>
+						<p class="text2">{{libro['Página Web']}}</p>
 					</div>
 					<div layout="row" layout-align="space-between center" >
-						<p class="text1">Código</p>
-						<p class="text2">{{libro['Número de páginas']}}</p>
+						<p class="text1">Fecha de Captura</p>
+						<p class="text2">{{libro['Fecha de Captura']}}</p>
+					</div>
+					<div layout="row" layout-align="space-between center" >
+						<p class="text1">Ubicación propuesta</p>
+						<p class="text2">{{libro['Ubicación propuesta']}}</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	
+<!-- 	
 	<div class="libros-relacionados" layout="row" layout-align="center center" flex="100">
 		<div class="max-widht" layout="column">
 			<div layout="row" layout-align="center center">
@@ -106,5 +112,5 @@
 				
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>
