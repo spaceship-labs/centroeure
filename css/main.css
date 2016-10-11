@@ -31,6 +31,8 @@ h1,h2,h3,h4,h5,h6{text-align: center;font-weight: normal;}
 button{border: none;outline: none}
 
 button[disabled], html input[type=button][disabled], input[type=reset][disabled], input[type=submit][disabled]{opacity: .5}
+
+
 .cont-blanco .formulario .input.ng-invalid.ng-dirty{border: 2px solid #E62117}
 .cont-blanco .formulario .input.ng-valid{background: white}
 
@@ -142,6 +144,7 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 
 .pagination{margin:0 auto;}
 .pagination li{display:block;float:left;margin: 0 2.5px}
+.pagination li.active{font-weight:bold;}
 
 /*Globales*/
 

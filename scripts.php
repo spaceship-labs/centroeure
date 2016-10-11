@@ -11,6 +11,7 @@
 <script src="<?=get_bloginfo('template_directory')?>/js/owl.carousel.min.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/app.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/factories.js"></script>
+<script src="<?=get_bloginfo('template_directory')?>/js/services/libraryservice.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/config.js"></script>
 <script src="http://maps.google.com/maps/api/js?v=3" type="text/javascript"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/controllers/headerController.js"></script>
