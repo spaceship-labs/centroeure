@@ -43,11 +43,11 @@ $estado = get_field('estado');
 					<p class="title"><strong>LOCALIZACIÓN</strong></p>
 					<p class="text">
 						<strong>Zonas Metropolitanas</strong><br><br>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+						<?php the_field('zonas_metropolitanas'); ?>
 					</p>
 					<p class="text">
 						<strong>Entidades federativas</strong><br><br>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+						<?php the_field('entidades_federativas'); ?>
 					</p>
 				</div>
 				<div class="map  wow bounceInRight" layout="row" layout-align="center center" flex-gt-md="35" flex="100">
@@ -80,15 +80,10 @@ $estado = get_field('estado');
 				<p class="title  wow bounceInUp">DESCRIPCIÓN DEL PROYECTO</p>
 			</div>
 			<div layout="row" layout-wrap layout-align="space-between start">
-				<div layout="column" flex-gt-xs="45" flex="100" >
-					<p class="text  wow bounceInLeft">
-						<?php the_field('descripcion_de_proyecto_columna_1'); ?>
-					</p>
-				</div>
-				<div layout="column" flex-gt-xs="45" flex="100" >
-					<p class="text  wow bounceInRight">
-						<?php the_field('descripcion_de_proyecto_columna_2'); ?>
-					</p>
+				<div layout="column" flex="100" >
+					<div class="text  wow bounceInLeft">
+						<?php the_content() ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -105,7 +100,7 @@ $estado = get_field('estado');
 				<div class="cont"><i class="icon-OBJETIVOS"></i></div>
 			</div>
 		</div>
-
+	<!--
 		<div class="objetivos  wow bounceInRight" layout="row" layout-align="center center" flex="100">
 			<div class="max-widht" layout="row" layout-wrap layout-align="space-around center">
 				<div layout="row" layout-align="center center" flex="100" >
@@ -127,6 +122,7 @@ $estado = get_field('estado');
 				<div class="cont"><i class="icon-METODO"></i></div>
 			</div>
 		</div>
+		-->
 
 	</div>
 
@@ -136,14 +132,9 @@ $estado = get_field('estado');
 				<p class="title  wow bounceInUp">PRINCIPALES RESULTADOS</p>
 			</div>
 			<div layout="row" layout-wrap layout-align="space-between start">
-				<div layout="column" flex-gt-xs="45" flex="100" >
+				<div layout="column" flex="100" >
 					<p class="text wow bounceInLeft">
-						<?php the_field('principales_resultados_columna_1'); ?>
-					</p>
-				</div>
-				<div layout="column" flex-gt-xs="45" flex="100" >
-					<p class="text  wow bounceInRight">
-						<?php the_field('principales_resultados_columna_2'); ?>
+						<?php the_field('principales_resultados'); ?>
 					</p>
 				</div>
 			</div>

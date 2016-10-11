@@ -167,7 +167,7 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 .slider-home .boton-der{position: absolute;background: #7CA429;padding: 20px;color: white;font-size: 30px;top: 50%;right: 0;z-index: 2;border-radius:  10px 0 0 10px;cursor: pointer;}
 .slider-home .cont{height: 100%;}
 .slider-home .cont p{color: white;text-align: center;}
-.slider-home .cont p.title-1{font-family: Raleway-b; font-size: 55px;}
+.slider-home .cont p.title-1{font-family: Raleway-b; font-size: 45px;}
 .slider-home .cont p.title-1 span{font-size: 45px}
 .slider-home .cont p.text{font-size: 26px;width: 85%;margin: 0 auto;margin-top: 20px;}
 .slider-home .cont a.boton{padding: 15px 25px;background: #A61817;margin-top: 30px;border-radius: 5px;transition: ease-in-out all .6s}
@@ -203,7 +203,7 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 
 /*Quienes*/
 
-#quienes .slider-home .cont p.title-1{font-family: Raleway-b; font-size: 55px;max-width: 600px;margin: 0 auto}
+#quienes .slider-home .cont p.title-1{font-family: Raleway-b;max-width: 600px;margin: 0 auto}
 
 /*Quienes*/
 
@@ -367,10 +367,11 @@ i.icon-mx-sl{top: -20px;left: -10px;}
 .descripcion-blanco{padding: 100px 0}
 .descripcion-blanco .title{color: #7CA429;font-family: Raleway-b;font-size: 25px;text-align: center;margin-bottom: 70px}
 .descripcion-blanco .text{color: #4C4C4C;font-size: 18px;text-align: justify;}
+.descripcion-blanco .text p{margin-bottom: 10px}
 
 .objetivos-cont{padding: 80px 0;background: white}
 .objetivos{padding: 30px 0}
-.objetivos .cont{}
+.objetivos .cont{text-align: justify;}
 .objetivos .title{color: #1C466E;font-size: 25px;margin-left: 20px;text-transform: uppercase;font-family: Raleway-b;margin-bottom: 30px}
 .objetivos .cont .box{margin-bottom: 10px}
 .objetivos .cont .box .num{color: #7CA429;font-size: 45px;font-family: Raleway-b;margin-right: 10px;font-family: Raleway-b}
