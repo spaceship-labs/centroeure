@@ -7,19 +7,40 @@ Template Name: Home
  
 <div id="home" class="overflow" layout="row" layout-wrap flex="100">
 
-	<div class="slider-home" layout="row" layout-align="center center" style="background: url(<?=get_bloginfo('template_directory')?>/img/1.0-HOME.jpg);" flex="100">
+	<div class="slider-home" layout="row" layout-align="center center" flex="100">
 		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
-		<div class="cont" layout="row" layout-align="center center" flex="100">
-			<div class="max-widht3 wow bounceInUp" layout="column">
-				<p class="title-1">Programa Metropolitano <br> <span>para Mérida y sus zonas conurbadas</span></p>
-				<p class="text">
-					Identifica los grandes problemas y potenciales de la zona y propone una estrategia integrada y de largo plazo para su desarrollo asi como
-					los proyectos estratégicos y los instrumentos para ejecutarla, desde la óptica de la sustentabilidad.
-				</p>
-				<div layout="row" layout-align="center center">
-					<a href="" class="boton"><p>leer más</p></a>
+		<div class="slide-home" layout="row" layout-align="center center" flex="100">
+			 <?php 
+            $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+            $args = array(
+              'post_type'         => 'post',
+              'posts_per_page' => 4,
+              'category_name'    => proyectos,
+              'paged'  => $paged,
+              );
+            $loop_alternativo = new WP_Query($args);
+            if( $loop_alternativo->have_posts() ):
+              while( $loop_alternativo->have_posts() ): $loop_alternativo->the_post(); ?>
+          	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );  ?>
+			<div class="cont item item-heigth" layout="row" layout-align="center center" flex="100" style="background: url(<?=$url?>)">
+				<div class="max-widht3 wow bounceInUp" layout="column">
+					<p class="title-1"><?php the_title(); ?></p>
+					<p class="text">
+						<?php the_excerpt();?>
+					</p>
+					<div layout="row" layout-align="center center">
+						<a href="<?php the_permalink(); ?>" class="boton"><p>leer más</p></a>
+					</div>
 				</div>
 			</div>
+			<?php    
+                endwhile; endif;
+                global $wp_query;
+                $wp_query = $loop_alternativo ;
+                if (function_exists( 'wp_pagenavi' )) {}
+                wp_reset_postdata(); 
+            ?>
+			
 		</div>
 		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
 	</div>

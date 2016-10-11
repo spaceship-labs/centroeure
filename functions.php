@@ -129,7 +129,7 @@ function team_func( $atts , $content ) {
     $img = wp_get_attachment_image($a['thumb'],'med_thumb');
     $str =  <<<EOF
       <div class="cont wow bounceInUp" layout="column" flex-gt-sm="30" flex="100">
-        <div class="img">{$img}</div>
+        <div class="img" layout="row" layout-align="center center">{$img}</div>
         <div class="info" layout="column">
           <div class="abrir-info" person="person-1" layout="row" layout-align="center center">
             <i class="icon-plus"></i>
@@ -155,5 +155,41 @@ EOF;
   return $str;
 }
 add_shortcode( 'equipo', 'team_func' );
+
+function alian_func( $atts , $content ) {
+    $a = shortcode_atts( array(
+        'nombre' => 'something',
+        'puesto' => 'something else',
+        'thumb' => null
+    ), $atts );
+    $img = wp_get_attachment_image($a['thumb'],'med_thumb');
+    $str =  <<<EOF
+      <div class="cont wow bounceInUp" layout="column" flex-gt-sm="30" flex="100">
+        <div class="img" layout="row" layout-align="center center">{$img}</div>
+        <div class="info" layout="column">
+          <div class="abrir-info" person="person-1" layout="row" layout-align="center center">
+            <i class="icon-plus"></i>
+          </div>
+          <p class="nombre">{$a['nombre']}</p>
+          <p class="puesto">{$a['puesto']}</p>
+          <div class="line"></div>
+          <div class="triangulo-azul"></div>
+        </div>
+        <div class="more-info person-1" layout="row">
+          <div class="cont" layout="column" flex="100">
+            <p class="nombre">{$a['nombre']}</p>
+            <p><strong><i class="puesto">{$a['puesto']}</i></strong></p>
+            <p class="text">{$content}</p>
+            <div class="triangulo-verde-ab"></div>
+            <div class="cerrar-info">
+              <i class="icon-ICONO_TACHE"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+EOF;
+  return $str;
+}
+add_shortcode( 'alianza', 'alian_func' );
 
 ?>

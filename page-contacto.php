@@ -3,7 +3,7 @@
 
 <div id="contacto" class="overflow" layout="row" layout-wrap flex="100">
 
-	<div class="slider-home" layout="row" layout-align="center center" style="background: url(<?=get_bloginfo('template_directory')?>/img/2.3-CONTACTO.jpg);" layout="row" layout-wrap layout-align="center center" flex="100">
+	<div class="slider-home" layout="row" layout-align="center center" layout="row" layout-wrap layout-align="center center" flex="100">
 		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
 		<div class="cont  wow bounceInUp" layout="row" layout-align="center center" flex="100">
 			<div class="max-widht3" layout="column">

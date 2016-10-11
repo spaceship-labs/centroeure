@@ -147,11 +147,21 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 
 /*Home*/
 
-.slider-home{background: blue;position: relative;background-size: cover!important;padding: 60px 0;}
+.slide-home{height: 100%}
+.slide-home .item{margin: 0 auto;height: 100%}
+.slide-home .owl-controls{display: none!important;}
+.slide-home .owl-wrapper-outer{height: 100%}
+
+.slider-home{position: relative;/*padding: 60px 0;*/}
+#quienes .slider-home{background-image: url(../img/NIK_4047.jpg);}
+#contacto .slider-home{background-image: url(../img/NIK_4063.jpg);}
+#servicios .slider-home{background-image: url(../img/NIK_4012.jpg);}
+#biblioteca .slider-home{background-image: url(../img/NIK_4025.jpg);}
+.item-heigth{background-size: cover!important;}
 .slider-home .icon-ARROW_SLIDER{position: absolute;left: 0;right: 0;bottom: 50px;font-size: 80px;color: white;margin: 0 auto;text-align: center;}
 .slider-home i.contacto1{position: absolute;left: 0;right: 0;margin: 0 auto;bottom:60px;}
-.slider-home .boton-izq{position: absolute;background: #7CA429;padding: 20px;color: white;font-size: 30px;top: 50%;left: 0;z-index: 2;border-radius: 0 10px 10px 0}
-.slider-home .boton-der{position: absolute;background: #7CA429;padding: 20px;color: white;font-size: 30px;top: 50%;right: 0;z-index: 2;border-radius:  10px 0 0 10px }
+.slider-home .boton-izq{position: absolute;background: #7CA429;padding: 20px;color: white;font-size: 30px;top: 50%;left: 0;z-index: 2;border-radius: 0 10px 10px 0;cursor: pointer;}
+.slider-home .boton-der{position: absolute;background: #7CA429;padding: 20px;color: white;font-size: 30px;top: 50%;right: 0;z-index: 2;border-radius:  10px 0 0 10px;cursor: pointer;}
 .slider-home .cont{height: 100%;}
 .slider-home .cont p{color: white;text-align: center;}
 .slider-home .cont p.title-1{font-family: Raleway-b; font-size: 55px;}
@@ -207,7 +217,8 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 
 .equipo{padding: 80px 0;position: relative;;margin-top: 10px;background-color: white}
 .equipo .cont{padding-top: 20px;position: relative;}
-.equipo .cont .img{background: red;height: 200px}
+.equipo .cont .img{;height: 200px;}
+.equipo .cont .img img{margin: 0 auto}
 .equipo .cont .info{background: #20627C;padding: 25px 0;position: relative;z-index: 1}
 .triangulo-azul{width: 0;height: 0;border-left: 20px solid transparent;border-right: 20px solid transparent;border-bottom: 20px solid #20627C;position: absolute;top: -15px;left: 0;right: 0;margin: 0 auto}
 .equipo .cont .info .abrir-info{position: absolute;top: -40px;width: 40px;height: 40px;background: #20627C;right: 0;cursor: pointer;}

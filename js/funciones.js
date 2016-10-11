@@ -646,6 +646,8 @@ window.onload = lanzar;
 function seccion_header(){
   var ventana_alto = $(window).height() -160;
   $('.slider-home').css('min-height', ventana_alto);
+  $('.slide-home').css('min-height', ventana_alto);
+  $('.item-heigth').css('min-height', ventana_alto);
   /*console.log(ventana_alto)*/
 };
 
@@ -680,10 +682,27 @@ function SliderTest(){
         owl.trigger('owl.prev');
     })
 }
+function SliderHOme(){
+    
+  var owl = $(".slide-home");
+
+  owl.owlCarousel({
+      autoPlay: false, //Set AutoPlay to 3 seconds
+      items : 1, //10 items above 1000px browser width
+    });
+
+    $(".boton-der").click(function(){
+        owl.trigger('owl.next');
+    });
+    $(".boton-izq").click(function(){
+        owl.trigger('owl.prev');
+    })
+}
 
 $(document).ready(function() {
     Map();
-    SliderTest()
+    SliderTest();
+    SliderHOme()
 });
 
 
