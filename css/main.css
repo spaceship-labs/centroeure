@@ -155,11 +155,11 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 .slide-home .owl-controls{display: none!important;}
 .slide-home .owl-wrapper-outer{height: 100%}
 
-.slider-home{position: relative;/*padding: 60px 0;*/}
+.slider-home{position: relative;/*padding: 60px 0;*/;background-size: cover }
 #quienes .slider-home{background-image: url(../img/NIK_4047.jpg);}
 #contacto .slider-home{background-image: url(../img/NIK_4063.jpg);}
 #servicios .slider-home{background-image: url(../img/NIK_4012.jpg);}
-#biblioteca .slider-home{background-image: url(../img/NIK_4025.jpg);}
+#biblioteca .slider-home{background-image: url(../img/NIK_3999.jpg);}
 .item-heigth{background-size: cover!important;}
 .slider-home .icon-ARROW_SLIDER{position: absolute;left: 0;right: 0;bottom: 50px;font-size: 80px;color: white;margin: 0 auto;text-align: center;}
 .slider-home i.contacto1{position: absolute;left: 0;right: 0;margin: 0 auto;bottom:60px;}
@@ -187,7 +187,7 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 .areas-home .cont i{color: #A41817;font-size: 120px;margin: 0 auto;margin-bottom: 5px;}
 .areas-home .cont p{font-size: 18px;text-align: center;color: #979797;font-family: Raleway-b;text-transform: uppercase;}
 .areas-home .cont .info{color: #838383;text-align: center;position: absolute;left: 0;top:10px;width: 100%;height: 100%;z-index: 2;background: white;opacity: 0;visibility: hidden;transition: ease-in-out all .5s}
-.areas-home .cont .info p.text{font-size: 13px;margin-bottom: 20px;text-transform: none}
+.areas-home .cont .info .text p{font-size: 13px;margin-bottom: 20px;text-transform: none}
 .areas-home .cont .info .boton-blanco{padding: 10px 30px;}
 .areas-home .cont .info .boton-blanco p{font-size: 15px}
 

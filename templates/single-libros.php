@@ -1,13 +1,13 @@
 <div id="biblioteca" class="" layout="row" layout-wrap flex="100" ng-controller='libroCTL'>
 
-	<div class="slider-home" style="background: url(<?=get_bloginfo('template_directory')?>/img/2.3-CONTACTO.jpg);" layout="row" layout-wrap layout-align="center center" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
+	<div class="slider-home" layout="row" layout-wrap layout-align="center center" flex="100">
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
 		<div class="cont" layout="row" layout-align="center center" flex="100">
 			<div class="max-widht3  wow bounceInUp" layout="column">
 				<p class="title-1"><span>Biblioteca</span><br> Responde a necesidades prácticas de los proyectos.</p>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 	</div>
 
 	<div class="green-line biblioteca" layout="row" layout-align="center center" flex="100">

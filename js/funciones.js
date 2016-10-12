@@ -699,6 +699,10 @@ function SliderHOme(){
     })
 }
 
+$(window).resize(function(){
+    seccion_header();
+});
+
 $(document).ready(function() {
     Map();
     SliderTest();

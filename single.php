@@ -21,6 +21,12 @@ if ($mycat == "libros ") { ?>
 	<?php include('templates/single-proyectos.php') ?>
 </div>
 
+<?php }else if ($mycat == "Areas de Especialización ") { ?>
+
+<div layout="row" flex="100">
+	<?php include('templates/single-areas.php') ?>
+</div>
+
 <?php } ?>
 
 <div layout="row" flex="100">

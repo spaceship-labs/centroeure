@@ -61,7 +61,7 @@ Template Name: Home
 				y regional, del ambiente y en general de la sociedad.
 			</p>
 			<div layout="row" layout-align="center center">
-				<a href="" class="boton-blanco">
+				<a href="/curriculum" class="boton-blanco">
 					<p>leer más</p>
 				</a>
 			</div>
@@ -80,78 +80,38 @@ Template Name: Home
 
 	<div class="areas-home" layout="row" layout-align="center center" flex="100">
 		<div class="max-widht2" layout="row" layout-align="center center" layout-wrap ng-controller="iconCTL">
-			<div class="cont  wow bounceInLeft" layout="column" layout-align="center center" flex-gt-xs="30" flex="100" info="info1">
-				<i class="icon-ICON_1"></i>
-				<p>desarrollo urbano-metropolitano</p>
-				<div class="info info1" layout="column" layout-align="center center">
-					<p class="text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-					<div layout="row" layout-align="center center">
-						<a href="" class="boton-blanco">
-							<p>ver más</p>
-						</a>
+
+			<?php 
+            $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+            $args = array(
+              'post_type'         => 'post',
+              'posts_per_page' => 6,
+              'category_name'    => areas,
+              'paged'  => $paged,
+              );
+            $loop_alternativo = new WP_Query($args);$info = 1;
+            if( $loop_alternativo->have_posts() ):
+              while( $loop_alternativo->have_posts() ): $loop_alternativo->the_post(); $info++?>
+				<div class="cont  wow bounceInLeft" layout="column" layout-align="center center" flex-gt-xs="30" flex="100" info="<?php echo $info ?>">
+					<i class="<?php the_field('icono'); ?>"></i>
+					<p><?php the_title(); ?></p>
+					<div class="info <?php echo $info ?>" layout="column" layout-align="center center">
+						<div class="text"><?php the_excerpt(); ?></div>
+						<div layout="row" layout-align="center center">
+							<a href="<?php the_permalink(); ?>" class="boton-blanco">
+								<p>ver más</p>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="cont  wow bounceInUp" layout="column" flex-gt-xs="30" flex="100" info="info2">
-				<i class="icon-home2"></i>
-				<p>desarrollo <br> regional</p>
-				<div class="info info2" layout="column" layout-align="center center">
-					<p class="text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-					<div layout="row" layout-align="center center">
-						<a href="" class="boton-blanco">
-							<p>ver más</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="cont  wow bounceInRight" layout="column" flex-gt-xs="30" flex="100" info="info3">
-				<i class="icon-home3"></i>
-				<p>estudios y estrategias especificas</p>
-				<div class="info info3" layout="column" layout-align="center center">
-					<p class="text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-					<div layout="row" layout-align="center center">
-						<a href="" class="boton-blanco">
-							<p>ver más</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="cont  wow bounceInLeft" layout="column" flex-gt-xs="30" flex="100" info="info4">
-				<i class="icon-home4"></i>
-				<p>política <br> pública</p>
-				<div class="info info4" layout="column" layout-align="center center">
-					<p class="text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-					<div layout="row" layout-align="center center">
-						<a href="" class="boton-blanco">
-							<p>ver más</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="cont  wow bounceInUp" layout="column" flex-gt-xs="30" flex="100" info="info5">
-				<i class="icon-home5"></i>
-				<p>intervenciones <br> urbanas</p>
-				<div class="info info5" layout="column" layout-align="center center">
-					<p class="text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-					<div layout="row" layout-align="center center">
-						<a href="" class="boton-blanco">
-							<p>ver más</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="cont  wow bounceInRight" layout="column" flex-gt-xs="30" flex="100" info="info6">
-				<i class="icon-ICON_6"></i>
-				<p>sistemas de info. geográfica e indicadores</p>
-				<div class="info info6" layout="column" layout-align="center center">
-					<p class="text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-					<div layout="row" layout-align="center center">
-						<a href="" class="boton-blanco">
-							<p>ver más</p>
-						</a>
-					</div>
-				</div>
-			</div>
+			<?php    
+                endwhile; endif;
+                global $wp_query;
+                $wp_query = $loop_alternativo ;
+                if (function_exists( 'wp_pagenavi' )) {}
+                wp_reset_postdata(); 
+            ?>
+
 		</div>
 	</div>
 
