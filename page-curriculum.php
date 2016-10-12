@@ -3,13 +3,13 @@
 <div id="quienes" class="overflow" layout="row" layout-wrap flex="100">
 
 	<div class="slider-home" layout="row" layout-align="center center" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
 		<div class="cont" layout="row" layout-align="center center" flex="100">
 			<div class="max-widht3  wow bounceInUp" layout="column">
 				<p class="title-1">Centro Eure <br> <span>Es una sociedad civil con 30 años de experiencia</span></p>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 	</div>
 
 	<div class="green-line" layout="row" layout-align="center end" flex="100">

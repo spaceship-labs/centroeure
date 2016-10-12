@@ -3,13 +3,13 @@
 <div id="equipo" class="overflow" layout="row" layout-wrap flex="100">
 
 	<div class="slider-home" layout="row" layout-align="center center" style="background: url(<?=get_bloginfo('template_directory')?>/img/2.1-EQUIPO.jpg);" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
 		<div class="cont  wow bounceInUp" layout="row" layout-align="center center" flex="100">
 			<div class="max-widht3" layout="column">
 				<p class="title-1">Centro Eure <br> <span>Conoce nuestro equipo</span></p>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 	</div>
 
 	<div class="green-line" layout="row" layout-align="center end" flex="100">

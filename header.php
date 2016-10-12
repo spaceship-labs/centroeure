@@ -39,7 +39,7 @@
 			</div>
 			<a href="/servicios/" class="link"><p>servicios</p></a>
 			<a href="/proyectos/" class="link"><p>proyectos</p></a>
-			<a href="/publicaciones/" class="link"><p>publicaciones</p></a>
+			<!--<a href="/publicaciones/" class="link"><p>publicaciones</p></a>-->
 			<a href="/biblioteca/" class="link"><p>biblioteca</p></a>
 		</div>
 		<a href="/contacto/" class="link contacto"><p>contacto</p></a>

@@ -4,13 +4,13 @@
 <div id="contacto" class="overflow" layout="row" layout-wrap flex="100">
 
 	<div class="slider-home" layout="row" layout-align="center center" layout="row" layout-wrap layout-align="center center" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
 		<div class="cont  wow bounceInUp" layout="row" layout-align="center center" flex="100">
 			<div class="max-widht3" layout="column">
 				<p class="title-1"><span>Acércate a Nostros</span><br> Información de contacto</p>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 		<i class="icon-ARROW_SLIDER  wow bounceInDown"></i>
 	</div>
 
