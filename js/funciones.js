@@ -687,7 +687,7 @@ function SliderHOme(){
   var owl = $(".slide-home");
 
   owl.owlCarousel({
-      autoPlay: false, //Set AutoPlay to 3 seconds
+      autoPlay: 5000, //Set AutoPlay to 5 seconds
       items : 1, //10 items above 1000px browser width
     });
 

@@ -131,7 +131,7 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 .con-info-blanco i{font-size: 120px; color: #A5201B;margin-bottom: 20px}
 .con-info-blanco p{color: #949494}
 .con-info-blanco p.titulo{color: #363636;font-size: 40px;font-family: Raleway-b;border-bottom: 2px solid #A61816;padding: 0 40px 10px 40px;text-align: center;}
-.con-info-blanco p.text{font-size: 20px;text-align: justify;margin-top: 30px}
+.con-info-blanco .text{font-size: 20px;text-align: justify;margin-top: 30px}
 
 .con-info-azul{padding: 120px 0px;background: #20627C; /* For browsers that do not support gradients */background: -webkit-radial-gradient(left, #20627C , #20627C); /* For Safari 5.1 to 6.0 */background: -o-radial-gradient(right, #20627C , #20627C); /* For Opera 11.1 to 12.0 */background: -moz-radial-gradient(right, #20627C , #20627C); /* For Firefox 3.6 to 15 */background: radial-gradient(to right, #20627C , #20627C); /* Standard syntax */; }
 .con-info-azul i{color: white;font-size: 80px;margin: 0 auto;margin-bottom: 20px;margin-top: 10px;}
@@ -209,6 +209,7 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 
 /*Servicios*/
 
+#servicios .con-info-blanco{padding: 100px 0 60px 0}
 .cont-iconos{padding: 100px 0 0px 0;}
 .cont-iconos .cont{height: 300px}
 .cont-iconos .cont i{color: #A21815;font-size: 90px;margin-bottom: 10px}

@@ -9,9 +9,9 @@
 							<?php the_title(); ?>
 						</p>
 					</div>
-					<p class="text">
+					<div class="text">
 						<?php the_content(); ?>
-					</p>
+					</div>
 				</div>
 			</div>
 			
