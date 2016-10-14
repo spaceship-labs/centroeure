@@ -28,7 +28,7 @@
 	</div>
 
 	<div class="equipo" layout="row" layout-align="center center" flex="100" ng-controller="equipoCTL">
-		<div class="max-widht2" layout="row" layout-wrap layout-align="space-between center">
+		<div class="max-widht2" layout="row" layout-wrap layout-align="space-between stretch">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<?php the_content(); ?>
 		<?php endwhile; endif; ?>

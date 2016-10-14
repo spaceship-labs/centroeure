@@ -8,9 +8,11 @@ $estado = get_field('estado');
 
 <div class="single-proyectos" layout="row" layout-wrap flex="100">
 	
+	<!--
 	<div class="buscar" layout="row" layout-align="center center" flex="100">
 		<i class="icon-LUPA  wow bounceInUp"></i>
 	</div>
+	-->
 
 	<div class="header-proyecto" layout="column" layout-align="end center" flex="100">
 		<p class="title  wow bounceInUp"><?php the_title(); ?></p>
@@ -41,14 +43,18 @@ $estado = get_field('estado');
 			<div class="mapa-single" layout="row" layout-align="space-between center" layout-wrap>
 				<div class="info  wow bounceInLeft" layout="column" flex-gt-md="60" flex="100">
 					<p class="title"><strong>LOCALIZACIÓN</strong></p>
+					<?php if (get_field('zonas_metropolitanas')) { ?>
 					<p class="text">
 						<strong>Zonas Metropolitanas</strong><br><br>
 						<?php the_field('zonas_metropolitanas'); ?>
 					</p>
+					<?php } ?>
+					<?php if (get_field('entidades_federativas')) { ?>
 					<p class="text">
 						<strong>Entidades federativas</strong><br><br>
 						<?php the_field('entidades_federativas'); ?>
 					</p>
+					<?php } ?>
 				</div>
 				<div class="map  wow bounceInRight" layout="row" layout-align="center center" flex-gt-md="35" flex="100">
 					<div id="map" flex="100"></div>
@@ -139,6 +145,11 @@ $estado = get_field('estado');
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="pdf" layout="column" flex="100">
+		<p>Descarga la información aquí</p>
+		<a href="<?php the_field('pdf'); ?>" target="_blank" layout="row" layout-align="center center"><i class="icon-PDF"></i></a>
 	</div>
 
 </div>

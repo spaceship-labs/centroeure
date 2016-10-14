@@ -151,14 +151,14 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 /*Home*/
 
 .slide-home{height: 100%}
-.slide-home .item{margin: 0 auto;height: 100%}
+.slide-home .item{margin: 0 auto;height: 100%;background-size: cover!important}
 .slide-home .owl-controls{display: none!important;}
 .slide-home .owl-wrapper-outer{height: 100%}
 
 .slider-home{position: relative;/*padding: 60px 0;*/;background-size: cover }
 #quienes .slider-home{background-image: url(../img/NIK_4047.jpg);}
 #contacto .slider-home{background-image: url(../img/NIK_4063.jpg);}
-#servicios .slider-home{background-image: url(../img/NIK_4012.jpg);}
+#servicios .slider-home{background-image: url(../img/NIK_4012.jpg);height: 300px;min-height: inherit!important;}
 #biblioteca .slider-home{background-image: url(../img/NIK_3999.jpg);}
 .item-heigth{background-size: cover!important;}
 .slider-home .icon-ARROW_SLIDER{position: absolute;left: 0;right: 0;bottom: 50px;font-size: 80px;color: white;margin: 0 auto;text-align: center;}
@@ -283,6 +283,9 @@ button[disabled], html input[type=button][disabled], input[type=reset][disabled]
 /*contact*/
 
 /*single*/
+
+.single-proyectos .pdf p{text-align: center;font-size: 30px;color: #1C466E;margin-bottom: 30px}
+.single-proyectos .pdf i{font-size: 90px;color: #1C466E;margin-bottom: 20px}
 
 .construccion{padding: 150px 0;background: white}
 .construccion .title{font-size: 40px;text-align: center;text-transform: uppercase;margin-bottom: 30px;font-family: Raleway-b}
