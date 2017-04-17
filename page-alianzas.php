@@ -3,13 +3,13 @@
 <div id="alianzas" class="overflow" layout="row" layout-wrap flex="100">
 
 	<div class="slider-home" layout="row" layout-align="center center" style="background: url(<?=get_bloginfo('template_directory')?>/img/2.2-ALIANZAS.jpg);" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
 		<div class="cont" layout="row" layout-align="center center" flex="100">
-			<div class="max-widht3  wow bounceInUp" layout="column">
+			<div class="max-widht3  wow fadeInUp" layout="column">
 				<p class="title-1">Centro Eure <br> <span>Conoce nuestras alianzas</span></p>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 	</div>
 
 	<div class="green-line" layout="row" layout-align="center end" flex="100">
@@ -17,7 +17,7 @@
 	</div>
 
 	<div class="con-info-blanco" layout="row" layout-align="center center" flex="100">
-		<div class="max-widht2  wow bounceInUp" layout="column">
+		<div class="max-widht2  wow fadeInUp" layout="column">
 			<div layout="column" layout-align="center center">
 				<i class="icon-alianza1"></i>
 				<p class="titulo">
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div class="colaboraciones  wow bounceInUp" layout="row" layout-wrap layout-align="center center" flex="100">
+	<div class="colaboraciones  wow fadeInUp" layout="row" layout-wrap layout-align="center center" flex="100">
 		<div class="max-widht2" layout="column" layout-align="center center">
 			<i class="icon-alianza2"></i>
 			<p class="titulo">Colaboraciones</p>

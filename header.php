@@ -7,6 +7,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<meta http-equiv="Expires" content="0">
+
+	<meta http-equiv="Last-Modified" content="0">
+
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+
+	<meta http-equiv="Pragma" content="no-cache">
+
+
 	<title><?php wp_title("Centroeure"); ?></title>
 	
 	<link rel="stylesheet" href="<?=get_bloginfo('template_directory')?>/bower_components/angular-material/angular-material.min.css">
@@ -21,9 +30,9 @@
 		var location_map = 0 ;
 	</script>
 </head>
-<body ng-cloak onload="inicializar_mapa()">
+<body ng-cloak onload="inicializar_mapa()" class="ng-cloak">
 
-<div class="header wow bounceInDown" layout="row" layout-align="center center" flex="100" hide show-gt-sm>
+<div class="header wow fadeInDown" layout="row" layout-align="center center" flex="100" hide show-gt-sm>
 	<div class="max-widht1" layout="row" layout-align="space-between center">
 		<a href="/home/"><img src="<?=get_bloginfo('template_directory')?>/img/logo.png" alt=""></a>
 		<div layout="row" layout-align="space-between center">
@@ -33,13 +42,13 @@
 				<div class="cont" layout="column">
 					<a href="/curriculum/" class="enlace"><p><strong>cv centro eure</strong></p></a>
 					<a href="/equipo/" class="enlace"><p><strong>equipo de trabajo</strong></p></a>
-					<a href="/alianzas/" class="enlace"><p><strong>alianzas</strong></p></a>
+					<!--<a href="/alianzas/" class="enlace"><p><strong>alianzas</strong></p></a>-->
 					<a href="/contacto/" class="enlace"><p><strong>contacto</strong></p></a>
 				</div>
 			</div>
 			<a href="/servicios/" class="link"><p>servicios</p></a>
 			<a href="/proyectos/" class="link"><p>proyectos</p></a>
-			<a href="/publicaciones/" class="link"><p>publicaciones</p></a>
+			<!--<a href="/publicaciones/" class="link"><p>publicaciones</p></a>-->
 			<a href="/biblioteca/" class="link"><p>biblioteca</p></a>
 		</div>
 		<a href="/contacto/" class="link contacto"><p>contacto</p></a>
@@ -58,7 +67,7 @@
 </div>
 -->
 
-<div id="movil-header wow bounceInDown" class="movil-header" layout="row" layout-wrap layout-align="start start" flex  ng-cloak  hide-gt-sm ng-controller="MovilCtrl">
+<div id="movil-header wow fadeInDown" class="movil-header" layout="row" layout-wrap layout-align="start start" flex  ng-cloak  hide-gt-sm ng-controller="MovilCtrl">
 	<div id="activar-header" layout="row" layout-align="space-between center"  flex="100">
 		<div ng-click='mostrarMenu("")' class="needsclick boton-menu" ><i class="icon-menu abrir-menu" ></i></div>
 		<a href="/home/"><img src="<?=get_bloginfo('template_directory')?>/img/logo.png" alt=""></a>
@@ -72,7 +81,7 @@
 				<ul class="ul-submenu">	
 					<li><a href="/curriculum/">cv centro eure</a></li>
 					<li><a href="/equipo/">equipo de trabajo</a></li>
-					<li><a href="/alianzas/">alianzas</a></li>
+					<!--<li><a href="/alianzas/">alianzas</a></li>-->
 					<li><a href="/contacto/">contacto</a></li>
 				</ul>	
 			</div>

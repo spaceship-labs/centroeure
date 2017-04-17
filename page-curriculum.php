@@ -3,20 +3,21 @@
 <div id="quienes" class="overflow" layout="row" layout-wrap flex="100">
 
 	<div class="slider-home" layout="row" layout-align="center center" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
 		<div class="cont" layout="row" layout-align="center center" flex="100">
-			<div class="max-widht3  wow bounceInUp" layout="column">
+			<div class="max-widht3  wow fadeInUp" layout="column" ng-controller="scrollCTL">
 				<p class="title-1">Centro Eure <br> <span>Es una sociedad civil con 30 años de experiencia</span></p>
+				<i class="icon-ARROW_SLIDER wow fadeInDown" ng-click="scrollTo('curriculum',$event)"></i>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 	</div>
 
 	<div class="green-line" layout="row" layout-align="center end" flex="100">
 		<div class="triangulo-blanco"></div>
 	</div>
 
-	<div class="con-info-blanco  wow bounceInUp" layout="row" layout-align="center center" flex="100">
+	<div id="curriculum" class="con-info-blanco  wow fadeInUp" layout="row" layout-align="center center" flex="100">
 		<div class="max-widht2" layout="column">
 			<div layout="column" layout-align="center center">
 				<i class="icon-quienes"></i>
@@ -34,7 +35,7 @@
 		</div>
 	</div>
 
-	<div class="con-info-azul  wow bounceInUp" layout="row" layout-align="center center" flex="100">
+	<div class="con-info-azul  wow fadeInUp" layout="row" layout-align="center center" flex="100">
 		<div class="max-widht2" layout="column">
 			<div layout="column" layout-align="center center">
 				<i class="icon-curriculum"></i>
@@ -52,7 +53,7 @@
 			<p class="text2">
 				<strong>descarga nuestro cv</strong>
 			</p>
-			<i class="icon-PDF"></i>
+			<a href="<?=get_bloginfo('template_directory')?>/CVCentroEURE_2017.pdf" target="_blank" layout="column" layout-align="center center"><i class="icon-PDF"></i></a>
 		</div>
 	</div>
 

@@ -408,7 +408,7 @@ $('#container').highcharts('Map', {
             joinBy: 'hc-key',
             name: 'Ciudad',
             states: {
-                hover: { color: '#A61817' },
+                hover: { color: '#D5D0CD' },
                 borderWidth: 20,
                 borderColor: 'black',
             },
@@ -667,6 +667,7 @@ function SliderTest(){
   var owl = $(".slider");
 
   owl.owlCarousel({
+      transitionStyle: "fade",
       autoPlay: false, //Set AutoPlay to 3 seconds
       items : 5, //10 items above 1000px browser width
       itemsDesktop : [1000,5], //5 items between 1000px and 901px
@@ -687,8 +688,13 @@ function SliderHOme(){
   var owl = $(".slide-home");
 
   owl.owlCarousel({
-      autoPlay: false, //Set AutoPlay to 3 seconds
-      items : 1, //10 items above 1000px browser width
+      transitionStyle: "fade",
+      autoPlay: 5000, //Set AutoPlay to 5 seconds
+      items : 1, 
+      itemsDesktop : false,
+      itemsDesktopSmall : false,
+      itemsTablet: false,
+      itemsMobile : false
     });
 
     $(".boton-der").click(function(){
@@ -698,6 +704,10 @@ function SliderHOme(){
         owl.trigger('owl.prev');
     })
 }
+
+$(window).resize(function(){
+    seccion_header();
+});
 
 $(document).ready(function() {
     Map();

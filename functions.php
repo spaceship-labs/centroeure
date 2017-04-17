@@ -124,6 +124,7 @@ function team_func( $atts , $content ) {
     $a = shortcode_atts( array(
         'nombre' => 'something',
         'puesto' => 'something else',
+        'id' => 'some',
         'thumb' => null
     ), $atts );
     $img = wp_get_attachment_image($a['thumb'],'med_thumb');
@@ -131,7 +132,7 @@ function team_func( $atts , $content ) {
       <div class="cont wow bounceInUp" layout="column" flex-gt-sm="30" flex="100">
         <div class="img" layout="row" layout-align="center center">{$img}</div>
         <div class="info" layout="column">
-          <div class="abrir-info" person="person-1" layout="row" layout-align="center center">
+          <div class="abrir-info" person="{$a['id']}" layout="row" layout-align="center center">
             <i class="icon-plus"></i>
           </div>
           <p class="nombre">{$a['nombre']}</p>
@@ -139,7 +140,7 @@ function team_func( $atts , $content ) {
           <div class="line"></div>
           <div class="triangulo-azul"></div>
         </div>
-        <div class="more-info person-1" layout="row">
+        <div class="more-info {$a['id']}" layout="row">
           <div class="cont" layout="column" flex="100">
             <p class="nombre">{$a['nombre']}</p>
             <p><strong><i class="puesto">{$a['puesto']}</i></strong></p>

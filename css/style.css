@@ -1,914 +1,282 @@
 @font-face {
-    font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?f2zd9m');
-    src:    url('fonts/icomoon.eot?f2zd9m#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?f2zd9m') format('truetype'),
-        url('fonts/icomoon.woff?f2zd9m') format('woff'),
-        url('fonts/icomoon.svg?f2zd9m#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ea68fa');
+  src:  url('fonts/icomoon.eot?ea68fa#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ea68fa') format('truetype'),
+    url('fonts/icomoon.woff?ea68fa') format('woff'),
+    url('fonts/icomoon.svg?ea68fa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-SOCIAL_5:before {
-    content: "\e90c";
-}
-.icon-ESTRUCTURA_TEMATICA2:before {
-    content: "\e902";
-}
-.icon-ARROW_SLIDER:before {
-    content: "\e9c7";
-}
-.icon-ICONO_TACHE:before {
-    content: "\e9c5";
-}
-.icon-MOVILIDAD3:before {
-    content: "\e9c6";
-}
-.icon-1:before {
-    content: "\e9c4";
-}
-.icon-2:before {
-    content: "\e97a";
-}
-.icon-3:before {
-    content: "\e97b";
-}
-.icon-4:before {
-    content: "\e97c";
-}
-.icon-CIENCIA_TEC2:before {
-    content: "\e97d";
-}
-.icon-COLABORACION:before {
-    content: "\e97e";
-}
-.icon-DISCOS2:before {
-    content: "\e97f";
-}
-.icon-ICON_1:before {
-    content: "\e980";
-}
-.icon-ICON_6:before {
-    content: "\e981";
-}
-.icon-MOVILIDAD2:before {
-    content: "\e982";
-}
-.icon-PLANES2:before {
-    content: "\e983";
-}
-.icon-TERRITORIALES2:before {
-    content: "\e979";
-}
-.icon-LOCATION:before {
-    content: "\e91c";
-}
-.icon-MAPA .path1:before {
-    content: "\e91d";
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path2:before {
-    content: "\e91e";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path3:before {
-    content: "\e91f";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path4:before {
-    content: "\e920";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path5:before {
-    content: "\e921";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path6:before {
-    content: "\e922";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path7:before {
-    content: "\e923";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path8:before {
-    content: "\e924";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path9:before {
-    content: "\e925";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path10:before {
-    content: "\e926";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path11:before {
-    content: "\e927";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path12:before {
-    content: "\e928";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path13:before {
-    content: "\e929";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path14:before {
-    content: "\e92a";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path15:before {
-    content: "\e92b";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path16:before {
-    content: "\e92c";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path17:before {
-    content: "\e92d";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path18:before {
-    content: "\e92e";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path19:before {
-    content: "\e92f";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path20:before {
-    content: "\e930";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path21:before {
-    content: "\e931";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path22:before {
-    content: "\e932";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path23:before {
-    content: "\e933";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path24:before {
-    content: "\e934";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path25:before {
-    content: "\e935";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path26:before {
-    content: "\e936";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path27:before {
-    content: "\e937";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path28:before {
-    content: "\e938";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path29:before {
-    content: "\e939";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path30:before {
-    content: "\e93a";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path31:before {
-    content: "\e93b";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path32:before {
-    content: "\e93c";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path33:before {
-    content: "\e93d";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path34:before {
-    content: "\e93e";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path35:before {
-    content: "\e93f";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path36:before {
-    content: "\e940";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path37:before {
-    content: "\e941";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path38:before {
-    content: "\e942";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path39:before {
-    content: "\e943";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path40:before {
-    content: "\e944";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path41:before {
-    content: "\e945";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path42:before {
-    content: "\e946";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path43:before {
-    content: "\e947";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path44:before {
-    content: "\e948";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path45:before {
-    content: "\e949";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path46:before {
-    content: "\e94a";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path47:before {
-    content: "\e94b";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path48:before {
-    content: "\e94c";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path49:before {
-    content: "\e94d";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path50:before {
-    content: "\e94e";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path51:before {
-    content: "\e94f";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path52:before {
-    content: "\e950";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path53:before {
-    content: "\e951";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path54:before {
-    content: "\e952";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path55:before {
-    content: "\e953";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path56:before {
-    content: "\e954";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path57:before {
-    content: "\e955";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path58:before {
-    content: "\e956";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path59:before {
-    content: "\e957";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path60:before {
-    content: "\e958";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path61:before {
-    content: "\e959";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path62:before {
-    content: "\e95a";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAPA .path63:before {
-    content: "\e95b";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAPA .path64:before {
-    content: "\e95c";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-ALCANCE:before {
-    content: "\e95d";
-}
-.icon-CONTRATANTE:before {
-    content: "\e95e";
-}
-.icon-DURACION:before {
-    content: "\e95f";
-}
-.icon-FECHA_CIERRE:before {
-    content: "\e960";
-}
-.icon-LUPA:before {
-    content: "\e961";
-}
-.icon-MAP .path1:before {
-    content: "\e984";
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path2:before {
-    content: "\e985";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path3:before {
-    content: "\e986";
-    margin-left: -1em;
-    color: rgb(142, 2, 2);
-}
-.icon-MAP .path4:before {
-    content: "\e987";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path5:before {
-    content: "\e988";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path6:before {
-    content: "\e989";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path7:before {
-    content: "\e98a";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path8:before {
-    content: "\e98b";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path9:before {
-    content: "\e98c";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path10:before {
-    content: "\e98d";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path11:before {
-    content: "\e98e";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path12:before {
-    content: "\e98f";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path13:before {
-    content: "\e990";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path14:before {
-    content: "\e991";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path15:before {
-    content: "\e992";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path16:before {
-    content: "\e993";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path17:before {
-    content: "\e994";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path18:before {
-    content: "\e995";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path19:before {
-    content: "\e996";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path20:before {
-    content: "\e997";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path21:before {
-    content: "\e998";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path22:before {
-    content: "\e999";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path23:before {
-    content: "\e99a";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path24:before {
-    content: "\e99b";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path25:before {
-    content: "\e99c";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path26:before {
-    content: "\e99d";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path27:before {
-    content: "\e99e";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path28:before {
-    content: "\e99f";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path29:before {
-    content: "\e9a0";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path30:before {
-    content: "\e9a1";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path31:before {
-    content: "\e9a2";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path32:before {
-    content: "\e9a3";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path33:before {
-    content: "\e9a4";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path34:before {
-    content: "\e9a5";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path35:before {
-    content: "\e9a6";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path36:before {
-    content: "\e9a7";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path37:before {
-    content: "\e9a8";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path38:before {
-    content: "\e9a9";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path39:before {
-    content: "\e9aa";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path40:before {
-    content: "\e9ab";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path41:before {
-    content: "\e9ac";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path42:before {
-    content: "\e9ad";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path43:before {
-    content: "\e9ae";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path44:before {
-    content: "\e9af";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path45:before {
-    content: "\e9b0";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path46:before {
-    content: "\e9b1";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path47:before {
-    content: "\e9b2";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path48:before {
-    content: "\e9b3";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path49:before {
-    content: "\e9b4";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path50:before {
-    content: "\e9b5";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path51:before {
-    content: "\e9b6";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path52:before {
-    content: "\e9b7";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path53:before {
-    content: "\e9b8";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path54:before {
-    content: "\e9b9";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path55:before {
-    content: "\e9ba";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path56:before {
-    content: "\e9bb";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path57:before {
-    content: "\e9bc";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path58:before {
-    content: "\e9bd";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path59:before {
-    content: "\e9be";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path60:before {
-    content: "\e9bf";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path61:before {
-    content: "\e9c0";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path62:before {
-    content: "\e9c1";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-MAP .path63:before {
-    content: "\e9c2";
-    margin-left: -1em;
-    color: rgb(245, 240, 224);
-}
-.icon-MAP .path64:before {
-    content: "\e9c3";
-    margin-left: -1em;
-    color: rgb(173, 208, 214);
-}
-.icon-METODO:before {
-    content: "\e962";
-}
-.icon-OBJETIVOS:before {
-    content: "\e963";
-}
-.icon-PAIS:before {
-    content: "\e964";
-}
-.icon-PRODUCTOS:before {
-    content: "\e965";
-}
-.icon-TERRITORIO:before {
-    content: "\e966";
-}
-.icon-AMBIENTAL:before {
-    content: "\e967";
-}
-.icon-CIENCIA_TEC:before {
-    content: "\e968";
-}
-.icon-DISCOS:before {
-    content: "\e969";
-}
-.icon-ECONOMICOS:before {
-    content: "\e96a";
-}
-.icon-ESTRUCTURA_TEMATICA:before {
-    content: "\e96b";
-}
-.icon-GEOGRAFIA:before {
-    content: "\e96c";
-}
-.icon-HISTORICOS:before {
-    content: "\e96d";
-}
-.icon-INFO_POLITICAS:before {
-    content: "\e96e";
-}
-.icon-LUPA_SEARCH_BAR:before {
-    content: "\e96f";
-}
-.icon-MAPAS:before {
-    content: "\e970";
-}
-.icon-MOVILIDAD:before {
-    content: "\e971";
-}
-.icon-PLANES:before {
-    content: "\e972";
-}
-.icon-POLITICOS:before {
-    content: "\e973";
-}
-.icon-PUBLICAS:before {
-    content: "\e974";
-}
-.icon-REVISTAS:before {
-    content: "\e975";
-}
-.icon-SOCIAL:before {
-    content: "\e976";
-}
-.icon-SUELO_URBANO:before {
-    content: "\e977";
-}
-.icon-TERRITORIALES:before {
-    content: "\e978";
-}
-.icon-MAIL:before {
-    content: "\e91b";
-}
-.icon-PDF:before {
-    content: "\e91a";
-}
-.icon-alianza1:before {
-    content: "\e918";
-}
-.icon-alianza2:before {
-    content: "\e919";
-}
-.icon-contacto1:before {
-    content: "\e915";
-}
-.icon-contacto2:before {
-    content: "\e916";
-}
-.icon-contacto3:before {
-    content: "\e917";
-}
-.icon-equipo:before {
-    content: "\e914";
-}
-.icon-pubilcacion:before {
-    content: "\e913";
-}
-.icon-servicio:before {
-    content: "\e912";
-}
-.icon-servicio1:before {
-    content: "\e90e";
-}
-.icon-servicio2:before {
-    content: "\e90f";
-}
-.icon-servicio3:before {
-    content: "\e910";
-}
-.icon-servicio4:before {
-    content: "\e911";
-}
 .icon-curriculum:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon-quienes:before {
-    content: "\e901";
+  content: "\e901";
+}
+.icon-ESTRUCTURA_TEMATICA2:before {
+  content: "\e902";
 }
 .icon-home2:before {
-    content: "\e903";
+  content: "\e903";
 }
 .icon-home3:before {
-    content: "\e904";
+  content: "\e904";
 }
 .icon-home4:before {
-    content: "\e905";
+  content: "\e905";
 }
 .icon-home5:before {
-    content: "\e906";
+  content: "\e906";
 }
 .icon-home6:before {
-    content: "\e907";
+  content: "\e907";
 }
 .icon-social1:before {
-    content: "\e908";
+  content: "\e908";
 }
 .icon-social2:before {
-    content: "\e909";
+  content: "\e909";
 }
 .icon-social3:before {
-    content: "\e90a";
+  content: "\e90a";
 }
 .icon-social4:before {
-    content: "\e90b";
+  content: "\e90b";
+}
+.icon-SOCIAL_5:before {
+  content: "\e90c";
 }
 .icon-tel:before {
-    content: "\e90d";
+  content: "\e90d";
 }
-.icon-menu:before {
-    content: "\ea7a";
+.icon-servicio1:before {
+  content: "\e90e";
 }
-.icon-earth:before {
-    content: "\e9ca";
+.icon-servicio2:before {
+  content: "\e90f";
+}
+.icon-servicio3:before {
+  content: "\e910";
+}
+.icon-servicio4:before {
+  content: "\e911";
+}
+.icon-servicio:before {
+  content: "\e912";
+}
+.icon-pubilcacion:before {
+  content: "\e913";
+}
+.icon-equipo:before {
+  content: "\e914";
+}
+.icon-contacto1:before {
+  content: "\e915";
+}
+.icon-contacto2:before {
+  content: "\e916";
+}
+.icon-contacto3:before {
+  content: "\e917";
+}
+.icon-alianza1:before {
+  content: "\e918";
+}
+.icon-alianza2:before {
+  content: "\e919";
+}
+.icon-PDF:before {
+  content: "\e91a";
+}
+.icon-MAIL:before {
+  content: "\e91b";
+}
+.icon-LOCATION:before {
+  content: "\e91c";
+}
+.icon-ALCANCE:before {
+  content: "\e95d";
+}
+.icon-CONTRATANTE:before {
+  content: "\e95e";
+}
+.icon-DURACION:before {
+  content: "\e95f";
+}
+.icon-FECHA_CIERRE:before {
+  content: "\e960";
+}
+.icon-LUPA:before {
+  content: "\e961";
+}
+.icon-METODO:before {
+  content: "\e962";
+}
+.icon-OBJETIVOS:before {
+  content: "\e963";
+}
+.icon-PAIS:before {
+  content: "\e964";
+}
+.icon-PRODUCTOS:before {
+  content: "\e965";
+}
+.icon-TERRITORIO:before {
+  content: "\e966";
+}
+.icon-AMBIENTAL:before {
+  content: "\e967";
+}
+.icon-CIENCIA_TEC:before {
+  content: "\e968";
+}
+.icon-DISCOS:before {
+  content: "\e969";
+}
+.icon-ECONOMICOS:before {
+  content: "\e96a";
+}
+.icon-ESTRUCTURA_TEMATICA:before {
+  content: "\e96b";
+}
+.icon-GEOGRAFIA:before {
+  content: "\e96c";
+}
+.icon-HISTORICOS:before {
+  content: "\e96d";
+}
+.icon-INFO_POLITICAS:before {
+  content: "\e96e";
+}
+.icon-LUPA_SEARCH_BAR:before {
+  content: "\e96f";
+}
+.icon-MAPAS:before {
+  content: "\e970";
+}
+.icon-MOVILIDAD:before {
+  content: "\e971";
+}
+.icon-PLANES:before {
+  content: "\e972";
+}
+.icon-POLITICOS:before {
+  content: "\e973";
+}
+.icon-PUBLICAS:before {
+  content: "\e974";
+}
+.icon-REVISTAS:before {
+  content: "\e975";
+}
+.icon-SOCIAL:before {
+  content: "\e976";
+}
+.icon-SUELO_URBANO:before {
+  content: "\e977";
+}
+.icon-TERRITORIALES:before {
+  content: "\e978";
+}
+.icon-TERRITORIALES2:before {
+  content: "\e979";
+}
+.icon-2:before {
+  content: "\e97a";
+}
+.icon-3:before {
+  content: "\e97b";
+}
+.icon-4:before {
+  content: "\e97c";
+}
+.icon-CIENCIA_TEC2:before {
+  content: "\e97d";
+}
+.icon-COLABORACION:before {
+  content: "\e97e";
+}
+.icon-DISCOS2:before {
+  content: "\e97f";
+}
+.icon-ICON_1:before {
+  content: "\e980";
+}
+.icon-ICON_6:before {
+  content: "\e981";
+}
+.icon-MOVILIDAD2:before {
+  content: "\e982";
+}
+.icon-PLANES2:before {
+  content: "\e983";
+}
+.icon-1:before {
+  content: "\e9c4";
+}
+.icon-ICONO_TACHE:before {
+  content: "\e9c5";
+}
+.icon-MOVILIDAD3:before {
+  content: "\e9c6";
+}
+.icon-ARROW_SLIDER:before {
+  content: "\e9c7";
+}
+.icon-earth2:before {
+  content: "\e9cb";
 }
 .icon-plus:before {
-    content: "\ea0a";
+  content: "\ea0a";
 }
 .icon-cross:before {
-    content: "\ea0f";
+  content: "\ea0f";
 }
 .icon-arrow-right2:before {
-    content: "\ea3c";
+  content: "\ea3c";
 }
 .icon-arrow-left2:before {
-    content: "\ea40";
+  content: "\ea40";
+}
+.icon-menu:before {
+  content: "\ea7a";
 }
 .icon-google-plus:before {
-    content: "\ea8b";
+  content: "\ea8b";
 }
 .icon-facebook2:before {
-    content: "\ea91";
+  content: "\ea91";
 }
 .icon-instagram:before {
-    content: "\ea92";
+  content: "\ea92";
 }
 .icon-twitter:before {
-    content: "\ea96";
+  content: "\ea96";
 }
 .icon-linkedin2:before {
-    content: "\eaca";
+  content: "\eaca";
+}
+.icon-internacional:before {
+  content: "\e9ca";
+}
+.icon-nacional:before {
+  content: "\e9cc";
 }
 

@@ -1,4 +1,4 @@
-<div class="max-widht1 wow bounceInUp" layout="row" flex-xs="100">
+<div class="max-widht1 wow fadeInUp" layout="row" flex-xs="100">
     <div class="listas-table" layout="column" flex="100">
     	<div class="header-list" layout="row">
     		<div class="cont" layout="row" layout-align="center center" flex="20" flex-xs="33">

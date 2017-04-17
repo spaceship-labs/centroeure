@@ -3,31 +3,31 @@
 
 <div id="contacto" class="overflow" layout="row" layout-wrap flex="100">
 
-	<div class="slider-home" layout="row" layout-align="center center" layout="row" layout-wrap layout-align="center center" flex="100">
-		<div class="boton-izq"><i class="icon-arrow-left2"></i></div>
-		<div class="cont  wow bounceInUp" layout="row" layout-align="center center" flex="100">
+	<div class="slider-home" layout="row" layout-align="center center" layout="row" layout-wrap layout-align="center center" flex="100"  >
+		<!--<div class="boton-izq"><i class="icon-arrow-left2"></i></div>-->
+		<div class="cont  wow fadeInUp" layout="row" layout-align="center center" flex="100" ng-controller="scrollCTL">
 			<div class="max-widht3" layout="column">
 				<p class="title-1"><span>Acércate a Nostros</span><br> Información de contacto</p>
+			    <i class="icon-ARROW_SLIDER  wow fadeInDown" ng-click="scrollTo('point',$event)"></i>
 			</div>
 		</div>
-		<div class="boton-der"><i class="icon-arrow-right2"></i></div>
-		<i class="icon-ARROW_SLIDER  wow bounceInDown"></i>
+		<!--<div class="boton-der"><i class="icon-arrow-right2"></i></div>-->
 	</div>
 
 	<div class="green-line" layout="row" layout-align="center end" flex="100">
 		<div class="triangulo-blanco"></div>
 	</div>
 
-	<div class="footer" layout="column" flex="100" > 
+	<div id="point" class="footer" layout="column" flex="100" > 
 		<div class="cont-blanco" layout="row" layout-align="center center">
 			<div class="max-widht1" layout="column" >
-				<div layout="row" layout-align="center center" class=" wow bounceInUp">
+				<div layout="row" layout-align="center center" class=" wow fadeInUp">
 					<div class="title" layout="row" layout-align="center center">
 						<p>Contacto</p>
 					</div>
 				</div>
 				<div layout="row" layout-align="space-around start" layout-wrap>
-					<form action="" class="formulario  wow bounceInLeft" layout="column" flex="90" flex-gt-xs="45">
+					<form action="" class="formulario  wow fadeInLeft" layout="column" flex="90" flex-gt-xs="45">
 						<div class="cont" layout="row" layout-align="space-between center" >
 							<div layout="column" flex="100">
 								<input name="clientname" type="text" class="input" id="last_name" ng-model="formData.name" required ng-class='{ error: WebToLeadForm.last_name.$invalid && !WebToLeadForm.$pristine }' capitalize-first placeholder="Nombre*:">
@@ -52,7 +52,7 @@
 							<input type="submit" value="enviar" class="enviar" ng-disabled="!WebToLeadForm.$valid">
 						</div>
 					</form>
-					<div layout="row" layout-wrap layout-align="start start" flex="90" flex-gt-xs="45" class=" wow bounceInRight">
+					<div layout="row" layout-wrap layout-align="start start" flex="90" flex-gt-xs="45" class=" wow fadeInRight">
 						<p class="titulo">DETALLES DE CONTACTO</p>
 						<div layout="row" layout-align="start center" flex="100">
 							<div layout="column" >
@@ -74,9 +74,9 @@
 							</div>
 						</div>
 						<div class="cont-redes" layout="row" layout-align="center center">
-							<a href="" class="cont" layout="row" layout-align="center center">
+							<!--<a href="" class="cont" layout="row" layout-align="center center">
 								<i class="icon-social1"></i>
-							</a>
+							</a>-->
 							<a href="" class="cont" layout="row" layout-align="center center">
 								<i class="icon-social2"></i>
 							</a>
@@ -96,7 +96,7 @@
 		</div>
 	</div>
 
-	<div class="mapa  wow bounceInUp" flex="100">
+	<div class="mapa  wow fadeInUp" flex="100">
 			<div id="mapa_div"></div>
 	</div>
 

@@ -6,7 +6,7 @@ app.controller('equipoCTL', function($scope) {
     console.log(id_person);
     $('.more-info').css({ 'opacity': '0', 'bottom': '-30px', 'z-index': '0' })
     if ($('.' + id_person).css('opacity') == "0") {
-      $('.' + id_person).css({ 'opacity': '1', 'bottom': '116px', 'z-index': '2' })
+      $('.' + id_person).css({ 'opacity': '1', 'bottom': '102px', 'z-index': '2' })
     }
   })
   $(".cerrar-info").click(function(e) {

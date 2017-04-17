@@ -7,7 +7,7 @@
 					<a href="/quienes-somos/" class="link"><p>quiénes somos</p></a>
 					<a href="/servicios/" class="link"><p>servicios</p></a>
 					<a href="/proyectos/" class="link"><p>proyectos</p></a>
-					<a href="/publicaciones/" class="link"><p>publicaciones</p></a>
+					<!--<a href="/publicaciones/" class="link"><p>publicaciones</p></a>-->
 					<a href="/biblioteca/" class="link"><p>biblioteca</p></a>
 				</div>
 			</div>

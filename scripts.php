@@ -24,3 +24,4 @@
 <script src="https://code.highcharts.com/mapdata/countries/mx/mx-all.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 <script src="<?=get_bloginfo('template_directory')?>/js/funciones.js"></script>
+<script src="<?=get_bloginfo('template_directory')?>/js/controllers/scroll.js"></script>
