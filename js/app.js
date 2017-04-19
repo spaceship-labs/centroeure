@@ -64,19 +64,32 @@ app.controller('MovilCtrl', function($scope, $timeout) {
 });
 
 app.controller('biblioCTL', function($scope, Publicacion, libraryService) {
+  $scope.form = {};
   $scope.pagination = {
     currentPage: 1,
-    totalItems: 5917
+    totalItems: 5917,
+    currentQuery: {}
   };
 
 
-  $scope.pageChanged = function(newPage) {
-    libraryService.getPublications({ page: newPage })
+  $scope.pageChanged = function(newPage, query) {
+    var q = query || $scope.pagination.currentQuery;
+    libraryService.getPublications({ query: q, page: newPage})
       .then(function(publicaciones) {
         $scope.pagination.currentPage = newPage;
+        $scope.pagination.currentQuery = q;
         $scope.publicaciones = publicaciones;
-        return publicaciones;
+        return libraryService.getPublicationsCount(q);
+      }).then(function(count){
+        $scope.pagination.totalItems = count;
       });
+  };
+
+  $scope.search = function(form) {
+    var query = {};
+    var text = form.text.indexOf(".*") == -1 ? form.text + ".*" : form.text;
+    query[form.type] = {$regex: text, $options: "i"};
+    $scope.pageChanged(1, query);
   };
 
   $scope.pageChanged(1);

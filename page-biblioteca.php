@@ -12,19 +12,19 @@
 	</div>
 
 	<div class="green-line biblioteca" layout="row" layout-align="center center" flex="100">
-		<form method="get" id="searchform"  action="<?php echo esc_url( home_url( '/' ) ); ?>"  role="search" class="max-widht2" layout="row" layout-wrap layout-align="space-between center">
+		<form method="get" id="searchform"  ng-submit="search(form)"  role="search" class="max-widht2" layout="row" layout-wrap layout-align="space-between center">
 			<div class="cont-select  wow fadeInLeft" layout="row" flex-gt-sm="45" flex="100">
-				<md-select ng-model="ctrl.userState" flex>
-			          <md-option ng-disabled="$index === 1">
+				<md-select ng-model="form.type" flex>
+			          <md-option ng-disabled="$index === 1" value="Autor">
 			            AUTOR
 			          </md-option>
-			          <md-option ng-disabled="$index === 1">
+			          <md-option ng-disabled="$index === 1" value="Título">
 			            TITULO
 			          </md-option>
-			          <md-option ng-disabled="$index === 1">
+			          <md-option ng-disabled="$index === 1" value="ISBN">
 			            NÚMERO DE REGISTRO
 			          </md-option>
-			          <md-option ng-disabled="$index === 1">
+			          <md-option ng-disabled="$index === 1" value="Fecha de publicación">
 			            FECHA DE PUBLICACIÓN
 			          </md-option>
 		        </md-select>
@@ -33,7 +33,7 @@
 		        	<i class="icon-LUPA_SEARCH_BAR"></i>
 		        </button>
 	        </div>
-	        <input class="text  wow fadeInRight" flex-gt-sm="45" flex="100" type="text" class="field" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" id="s" placeholder="<?php esc_attr_e( 'Search …', 'shape' ); ?>" />   
+	        <input ng-model="form.text" class="text  wow fadeInRight" flex-gt-sm="45" flex="100" type="text" class="field" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" id="s" placeholder="<?php esc_attr_e( 'Search …', 'shape' ); ?>" />
 			<input type="hidden" name="cat" value="libros">
         </form>
 	</div>
